@@ -1,0 +1,146 @@
+@import url(./variables.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.logo {
+    margin-top: 90px;
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+    margin-top: 50px;
+    position: relative;
+}
+
+.content h1 {
+    font-size: 2.3rem;
+    font-weight: 300;
+    color: var(--gray);
+}
+
+.content span {
+    font-weight: 700;
+    color: var(--verydarkBlue);
+}
+
+.content p {
+    margin-top: 20px;
+    color: var(--verydarkBlue);
+    font-size: 0.9rem;
+}
+
+.content form {
+    margin-top: 35px;
+}
+
+.content form input {
+    height: 45px; 
+    width: 370px;
+    padding: 15px 25px;
+    border-radius: 50px;
+    border: 1px solid var(--paleBlue);
+    outline: none;
+    margin-right: 10px;
+}
+
+.content form input::placeholder {
+    color: var(--paleBlue);
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+.content form button {
+    cursor: pointer;
+    font-weight: 300;
+    background-color: var(--blue);
+    height: 45px;
+    width: 150px;
+    outline: none;
+    border: none;
+    color: white;
+    font-family: 'Libre Franklin', sans-serif;
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px var(--blue);
+    transition: all 500ms ease;
+}
+
+.content form button:hover {
+    opacity: 0.8;
+}
+
+.images img {
+    width: 600px;
+    margin-top: 100px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+i {
+    height: 35px;
+    width: 35px;
+    border-radius: 100%;
+    border: 1px solid var(--gray);
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+i::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    color: var(--blue);
+    border-radius: 100%;
+    transition: all 500ms ease;
+}
+
+i:hover::before {
+    background-color: var(--blue);
+    color: white;
+}
+
+.footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+.content form input.error {
+    border: 1px solid var(--ligthRed);
+}
+
+span.spanError {
+    display: none;
+    color: var(--ligthRed);
+    font-size: 0.7rem;
+    font-weight: 300;
+    font-style: italic;
+    position: absolute;
+    left: 52px;
+    margin-top: 7px;
+}
+
+.spanError.active{
+    display: block;
+}
+
+.attribution {
+    font-size: 0.7em;
+    margin-top: 30px;
+}
